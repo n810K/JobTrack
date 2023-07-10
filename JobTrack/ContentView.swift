@@ -109,25 +109,45 @@ struct ContentView: View {
                         .onDelete(perform: deleteJob)
                     }
                     .navigationTitle("Job Tracker")
+                    
                 }
 
                 VStack {
                     Spacer()
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            showAddJobView = true
-                        }) {
-                            ZStack {
-                                Circle()
-                                    .frame(width: 45, height: 45)
-                                    .foregroundColor(.blue)
-                                Image(systemName: "plus")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20))
+                    ZStack {
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                showAddJobView = true
+                            }) {
+                                ZStack {
+                                    Circle()
+                                        .frame(width: 45, height: 45)
+                                        .foregroundColor(.blue)
+                                    Image(systemName: "plus")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20))
+                                }
                             }
+                            Spacer()
                         }
-                        Spacer()
+
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                showArchiveView = true
+                            }) {
+                                ZStack {
+                                    Circle()
+                                        .frame(width: 45, height: 45)
+                                        .foregroundColor(.blue)
+                                    Image(systemName: "tray.full")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20))
+                                }
+                            }
+                            .padding(.trailing, 16)
+                        }
                     }
                     .padding(.bottom, 16)
                 }
@@ -144,6 +164,10 @@ struct ContentView: View {
                     updateJob(updatedJob, title: title, companyName: companyName, salary: salary, applicationDate: applicationDate, notes: notes, status: status)
                 }
             }
+            .sheet(isPresented: $showArchiveView) {
+                ArchiveView(archivedJobs: archivedJobs)
+            }
+
         }
     }
 
