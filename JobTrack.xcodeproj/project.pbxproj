@@ -15,6 +15,8 @@
 		CF487D792A5A583700550F90 /* JobTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF487D782A5A583700550F90 /* JobTrackTests.swift */; };
 		CF487D832A5A583700550F90 /* JobTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF487D822A5A583700550F90 /* JobTrackUITests.swift */; };
 		CF487D852A5A583700550F90 /* JobTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF487D842A5A583700550F90 /* JobTrackUITestsLaunchTests.swift */; };
+		CF487D922A5A5B2800550F90 /* AddJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF487D912A5A5B2800550F90 /* AddJobView.swift */; };
+		CF4B37182A5C87A700452BF1 /* EditJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4B37172A5C87A700452BF1 /* EditJobView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		CF487D7E2A5A583700550F90 /* JobTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF487D822A5A583700550F90 /* JobTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackUITests.swift; sourceTree = "<group>"; };
 		CF487D842A5A583700550F90 /* JobTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF487D912A5A5B2800550F90 /* AddJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobView.swift; sourceTree = "<group>"; };
+		CF4B37172A5C87A700452BF1 /* EditJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJobView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 		CF487D642A5A583600550F90 /* JobTrack */ = {
 			isa = PBXGroup;
 			children = (
-				CF487D652A5A583600550F90 /* JobTrackApp.swift */,
+				CF4B37172A5C87A700452BF1 /* EditJobView.swift */,
 				CF487D672A5A583600550F90 /* ContentView.swift */,
+				CF487D912A5A5B2800550F90 /* AddJobView.swift */,
+				CF487D652A5A583600550F90 /* JobTrackApp.swift */,
 				CF487D692A5A583700550F90 /* Assets.xcassets */,
 				CF487D6E2A5A583700550F90 /* Item.swift */,
 				CF487D6B2A5A583700550F90 /* Preview Content */,
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4B37182A5C87A700452BF1 /* EditJobView.swift in Sources */,
 				CF487D682A5A583600550F90 /* ContentView.swift in Sources */,
 				CF487D6F2A5A583700550F90 /* Item.swift in Sources */,
+				CF487D922A5A5B2800550F90 /* AddJobView.swift in Sources */,
 				CF487D662A5A583600550F90 /* JobTrackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
