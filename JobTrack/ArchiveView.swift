@@ -46,8 +46,10 @@ private func statusColor(for status: JobApplicationStatus) -> Color {
     }
 }
 
+
 struct ArchiveView: View {
     let archivedJobs: [JobApplication]
+    @State private var selectedJob: JobApplication?
     
     var body: some View {
         NavigationView {

@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var showAddJobView = false
     @State private var showArchiveView = false
 
-    @State private var selectedJob: JobApplication? // Add this state property
+    @State private var selectedJob: JobApplication?
     
     private var archivedJobs: [JobApplication] {
         jobApplications.filter { $0.status == .rejected }
